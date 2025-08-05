@@ -13,7 +13,7 @@ getleaderboard()
 
   const getleaderboard=async()=>{
     try {
-      const res=await axios.get("https://intertask.onrender.com/api/leaderboard");
+      const res=await axios.get("http://localhost:5000/api/leaderboard");
        const sortedData = res.data.sort((a, b) => b.donations - a.donations)
     
     setLeaderboard(sortedData);

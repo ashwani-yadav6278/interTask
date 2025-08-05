@@ -6,7 +6,7 @@ app.use(express.json());
 const PORT=process.env.PORT || 5000;
 import internRoutes from './routes/routes.js';
 app.use(cors({
-    origin: 'https://venerable-sundae-29fffc.netlify.app',
+    origin: 'http://localhost:5173',
 }));
 
 app.get("/",(req,res)=>{
