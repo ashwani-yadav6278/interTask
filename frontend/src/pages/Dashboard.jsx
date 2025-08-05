@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   const getInternData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/interndata");
+      const res = await axios.get("https://intertask.onrender.com/api/interndata");
       setInternData(res.data);
 
     } catch (error) {
