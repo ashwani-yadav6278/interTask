@@ -6,7 +6,7 @@ app.use(express.json());
 const PORT=process.env.PORT || 5000;
 import internRoutes from './routes/routes.js';
 app.use(cors({
-    origin: 'https://inter-task-three.vercel.app',
+    origin: 'https://venerable-sundae-29fffc.netlify.app',
 }));
 
 app.get("/",(req,res)=>{
